@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#title{
+  background-color: rgba(36, 88, 204, 0.99);
+}
+#title h1{
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  background:linear-gradient(90deg,rgb(241, 243, 127) 0%,  rgb(134, 250, 173) 35%,  rgba(0, 212, 255, 1) 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+  text-shadow:none
+
+}
+#london{
+    background: linear-gradient(
+    90deg,
+    rgb(241, 243, 127) 0%,
+    rgb(134, 250, 173) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+#moscow{
+  background: linear-gradient(
+    130deg,
+    rgb(134, 250, 173) 0%,
+    rgba(0, 212, 255, 1) 40%,
+    rgb(241, 243, 127) 100%
+  );
+}
+#new-york{
+  background: linear-gradient(
+    240deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgb(241, 243, 127) 20%,
+    rgb(134, 250, 173) 70%
+  ); 
+}
+#bejing{
+  background: linear-gradient(
+    90deg,
+    rgb(134, 250, 173) 0%,
+    rgb(241, 243, 127) 55%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+#london, #moscow, #new-york, #bejing{
+  height: 15rem;
+  text-align: center;
+  padding: 0 10%;
+  display: grid !important;
+}
+.carousel-inner h1{
+margin: 0;
+}
+.carousel-inner h5{
+margin: 0;
+}
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 2px solid rgba(124, 124, 124, 0.479);
+}
+.container div {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: rgba(36, 88, 204, 0.99);
+}
+input {
+  padding: 0.2rem 0 0.2rem 1rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  background: none;
+}
+input:focus {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+button {
+  font-size: 1.5rem;
+  border: none !important;
+  color: black !important ;
+  font-weight: 700 !important;
+  background: linear-gradient(130deg,rgb(134, 250, 173) 0%,rgba(0, 212, 255, 1) 40%,rgb(241, 243, 127) 100%)!important;
+}
+button:hover{
+  background-color: black !important ;
+  color: linear-gradient(130deg,rgb(134, 250, 173) 0%,rgba(0, 212, 255, 1) 40%,rgb(241, 243, 127) 100%)!important;
+}
+
+@media only screen and (max-width: 575px) {
+    input {
+      margin: 0 2rem;
+    }
+    button {
+        margin: 0 2rem;
+      }
+    }
