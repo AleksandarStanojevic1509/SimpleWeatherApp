@@ -5,6 +5,8 @@ const moscowDiv = document.getElementById('moscow');
 const newYorkDiv = document.getElementById('new-york');
 const bejingDiv = document.getElementById('bejing');
 const header = document.querySelector ('header');
+const loader = document.getElementById('loader-bck');
+const searchRes = document.getElementById('search-res')
 
 
 // render town user entered
@@ -13,6 +15,13 @@ submBtn.addEventListener("click", () => {
   let inputText = inputF.value;
   let inputFixed = inputText.toLocaleLowerCase().slice(0, 3);
   inputFixed.textContent = '';
+  moscowDiv.innerHTML = '';
+  londonDiv.innerHTML = '';
+  bejingDiv.innerHTML = '';
+  newYorkDiv.innerHTML = '';
+  // searchRes.innerHTML = '';
+
+  loader.style.display = 'flex'
   
   fetch(
     `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${inputFixed}`)
@@ -93,6 +102,7 @@ submBtn.addEventListener("click", () => {
         
     fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`)
     .then(res=>{
+      loader.style.display = 'none'
       return res.json();
     })
     .then(data=>{
