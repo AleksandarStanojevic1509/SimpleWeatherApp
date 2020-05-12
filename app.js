@@ -8,7 +8,7 @@ const newYorkDiv = document.getElementById('new-york');
 const bejingDiv = document.getElementById('bejing');
 const header = document.querySelector ('header');
 const loader = document.getElementById('loader-bck');
-const searchRes = document.querySelector('header div');
+
 
 
 
