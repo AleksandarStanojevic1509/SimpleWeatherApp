@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
 }
+body{
+  height: 100vh;
+    background: #235acd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 #loader-bck{
   /* background:linear-gradient(90deg,rgb(241, 243, 127) 0%,  rgb(134, 250, 173) 35%,  rgba(0, 212, 255, 1) 100%); */
